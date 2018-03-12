@@ -25,18 +25,59 @@
       <h1 class="title">Магазин готовых шаблонов</h1>
 			
         <section class="filtres">
-						<h2 class="hidden">Фильтры шаблонов</h2> 
-						<!--FORM-->
+					<h2 class="hidden">Фильтры шаблонов</h2> 
+					<form method="get" action="https://echo.htmlacademy.ru">
+						<fieldset>
+							<legend>Стоимость:</legend>
+								<div><span>○</span>-------<span>○</span></div>
+								<label for="cost-min">от</label>
+								<input type="number" name="cost-min" id="cost-min" value="0">
+							
+								<label for="cost-max">от</label>
+								<input type="number" name="cost-max" id="cost-max" value="15000">
+						</fieldset>
+						
+						<fieldset>
+							<legend>Сетка: </legend>
+								<input type="radio" name="layout" id="layout-adaptive" value="adaptive" checked>
+								<label for="layout-adaptive">Адаптивная</label>
+							
+								<input type="radio" name="layout" id="layout-fixed" value="fixed">
+								<label for="layout-fixed">Фиксированная</label>
+							
+								<input type="radio" name="layout" id="layout-adaptable" value="adaptable">
+								<label for="layout-adaptable">Резиновая</label>
+						</fieldset>	
+						
+						<fieldset>
+							<legend>Особенности:</legend>	
+								<input type="checkbox" name="features" id="features-slider" value="slider" checked>
+								<label for="features-slider">Слайдер</label>
+							
+								<input type="checkbox" name="features" id="features-advantages" value="advantages">
+								<label for="features-advantages">Блок преимуществ</label>
+							
+								<input type="checkbox" name="features" id="features-news" value="news" checked>
+								<label for="features-news">Новости</label>
+							
+								<input type="checkbox" name="features" id="features-galery" value="galery">
+								<label for="features-galery">Галерея</label>
+							
+								<input type="checkbox" name="features" id="features-cart" value="cart">
+								<label for="features-cart">Корзина</label>
+						</fieldset>
+						<button type="submit">Показать</button>
+					</form>
         </section>
 				
 				<section class="sort">
 						<p>Сортировать:</p>
 						<ul class="sort-item">
-								<li> по цене</li>
-								<li> по типу</li>
-								<li> по названию</li>
+								<li> <a href="#">по цене</a></li>
+								<li> <a href="#">по типу</a></li>
+								<li> <a href="#">по названию</a></li>
 						</ul>
-						<span>▼</span> <span>▲</span>
+						<a href="#"><span>▼</span></a> <a href="#"><span>▲</span></a>
 				</section>
 				
 				<section class="catalog">
@@ -90,7 +131,7 @@
 		
 		<footer class="main-footer">
 			
-				<section class="footer-map"> <img src="img/map.jpg" width="1440" height="416" alt="Карта"></section>
+				<section class="footer-map"> <img src="img/map.jpg" width="1440" height="416" alt="Санкт-Петербург, ул. Б. Конюшенная, д. 19/8"></section>
 			
 				<section class="footer-contacts">
         	<h2 class="hidden">Контактная информация</h2>
@@ -119,8 +160,25 @@
 			
 			<section class="write-us">
 				<h2> Напишите нам</h2>
-				<!--FORM-->
-				<span class="close">X</span>
+				<form class="write-form" action="https://echo.htmlacademy.ru" method="post">
+					<p>
+          <label for="write-name">Ваше имя:</label>
+          <input id="write-name" type="text" name="name" placeholder="Имя Фамилия">
+        	</p>
+					
+					<p>
+          <label for="write-email">Ваш e-mail:</label>
+          <input id="write-email" type="email" name="email" placeholder="email@example.com">
+        	</p>
+					
+					<p>
+          <label for="write-comment">Текст письма:</label>
+          <textarea id="write-comment" name="text">В свободной форме</textarea>
+        	</p>
+					
+					<button class="btn" type="submit">Отправить</button>
+				</form>
+				<button class="modal-close" type="button">Закрыть</button>
 			</section>
 		
 	</body>
