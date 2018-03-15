@@ -1,0 +1,111 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #283136;
+	
+	background-color: #fff;
+}
+
+a {
+	text-decoration: none;
+}
+.btn {
+	text-transform: uppercase;
+	color:#fff;
+	line-height: 18px;
+  font-weight: 500;
+	border:none;
+	font:inherit;
+	text-align: center;
+	vertical-align: middle;
+	
+	background-color: #fb565a;
+}
+
+.main-navigation,
+.slider {
+	background-color: #eee;
+}
+
+.header-navigation,
+.header-cart {
+	list-style: none;
+}
+
+.header-navigation a,
+.header-cart a {
+	color:#000;
+	text-transform: uppercase;
+	line-height: 30px;
+	font-weight: 500;
+	
+}
+
+.header-navigation a:hover,
+.header-cart a:hover {
+	color: #fb565a;
+} 
+
+.header-navigation a:focus,
+.header-cart a:focus {
+	color: rgba(0,0,0,0.3);
+}
+
+.header-navigation a:active,
+.header-cart a:active,
+.header-navigation-point /*временно*/{
+	border-bottom: 2px solid #fb565a;
+	color:#000;
+} 
+
+.slider ul {
+	list-style: none;
+}
+
+.slider b {
+	font-size: 55px;
+  line-height: 55px;
+  font-weight: 500;
+  color: #000;
+}
+.services ul {
+	list-style: none;
+}
+
+.services h3 {
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 30px;
+	text-transform: uppercase;
+	color:#000;
+}
+
+.column1 .title {
+	font-weight: 500;
+	font-size: 45px;
+	line-height: 45px;
+	color:#000;
+}
+
+.column1 p b,/*не знаю как обозвать класс*/ 
+.advantages caption{
+	font-weight: 700;
+	text-transform: uppercase;
+	color:#000;
+}
+
+.advantages th {
+	font-size:45px;
+	font-weight: 700;
+	color:#000;
+	line-height: 10,06px;
+}
+
+.advantages td {
+	line-height: 18px;
+}
