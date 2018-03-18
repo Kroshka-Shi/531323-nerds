@@ -27,6 +27,15 @@ a {
 	background-color: #fb565a;
 }
 
+.btn:hover {
+	background-color: #e74246;
+}
+.btn:focus{
+	color:rgba(255,255,255,0.3);
+	
+	background-color: #d7373b;
+}
+
 .main-navigation,
 .slider {
 	background-color: #eee;
@@ -109,3 +118,49 @@ a {
 .advantages td {
 	line-height: 18px;
 }
+.footer-contacts p {
+	line-height: 18px;
+	color: #666;
+}
+.footer-contacts .title {
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 30px;
+	color:#000;
+}
+
+.footer-social b {
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 36px;
+	color:#000;
+}
+
+.footer-social p {
+	line-height: 22px;
+}
+.footer-social ul {
+	list-style: none;
+}
+
+.write-us h2 {
+	font-weight: 500;
+	font-size: 45px;
+	line-height: 45px;
+}
+
+.write-us label {
+	font-weight: 700;
+	line-height: 18px;
+}
+
+.write-us input[type="text"],
+.write-us input[type="email"],
+.write-us textarea{
+	font: inherit;
+	line-height: 18px;
+	color:rgba(68,68,68.0.5);
+	
+	border:2px solid #d7dcde;
+}
+
