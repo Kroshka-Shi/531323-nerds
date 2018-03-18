@@ -37,7 +37,8 @@ a {
 }
 
 .main-navigation,
-.slider {
+.slider,
+.main-title{
 	background-color: #eee;
 }
 
@@ -76,7 +77,8 @@ a {
 	list-style: none;
 }
 
-.slider b {
+.slider b,
+.main-title{
 	font-size: 55px;
   line-height: 55px;
   font-weight: 500;
@@ -163,4 +165,47 @@ a {
 	
 	border:2px solid #d7dcde;
 }
+
+.filtres fieldset {
+  border: none;
+}
+
+.filtres legend {
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 30px;
+	color:#000;
+}
+
+.filtres ul {
+	list-style: none;
+	line-height: 20px;
+}
+
+.filtres-input:hover + label,
+.filtres-input:focus + label{
+	color:#000;
+}
+
+.filtres-input:disabled + label {
+	opacity: 0.3;
+}
+
+.btn-filtres {
+	color:#000;
+	
+	background-color: #eee;
+}
+
+.btn-filtres:hover{
+	background-color: #dfdfdf;
+}
+
+.btn-filtres:focus {
+	color:rgba(255,255,255,0.3);
+	
+	background-color: #d5d5d5;
+	/*декор эффект тени*/
+}
+
 

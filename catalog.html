@@ -25,7 +25,7 @@
     </header>
       
     <main>
-      <h1 class="title">Магазин готовых шаблонов</h1>
+      <h1 class="main-title">Магазин готовых шаблонов</h1>
 			
         <section class="filtres">
 					<h2 class="hidden">Фильтры шаблонов</h2> 
@@ -36,40 +36,52 @@
 								<label for="cost-min">от</label>
 								<input type="number" name="cost-min" id="cost-min" value="0">
 							
-								<label for="cost-max">от</label>
+								<label for="cost-max">до</label>
 								<input type="number" name="cost-max" id="cost-max" value="15000">
 						</fieldset>
 						
 						<fieldset>
 							<legend>Сетка: </legend>
-								<input type="radio" name="layout" id="layout-adaptive" value="adaptive" checked>
+							<ul>
+								<li><input class="filtres-input" type="radio" name="layout" id="layout-adaptive" value="adaptive" checked>
 								<label for="layout-adaptive">Адаптивная</label>
-							
-								<input type="radio" name="layout" id="layout-fixed" value="fixed">
+								</li>
+								
+								<li><input class="filtres-input" type="radio" name="layout" id="layout-fixed" value="fixed" disabled>
 								<label for="layout-fixed">Фиксированная</label>
+								</li>
 							
-								<input type="radio" name="layout" id="layout-adaptable" value="adaptable">
+								<li><input class="filtres-input" type="radio" name="layout" id="layout-adaptable" value="adaptable">
 								<label for="layout-adaptable">Резиновая</label>
+								</li>
+							</ul>
 						</fieldset>	
 						
 						<fieldset>
-							<legend>Особенности:</legend>	
-								<input type="checkbox" name="features" id="features-slider" value="slider" checked>
+							<legend>Особенности:</legend>
+							<ul>
+								<li><input class="filtres-input" type="checkbox" name="features" id="features-slider" value="slider" checked>
 								<label for="features-slider">Слайдер</label>
+								</li>
 							
-								<input type="checkbox" name="features" id="features-advantages" value="advantages">
+								<li><input class="filtres-input" type="checkbox" name="features" id="features-advantages" value="advantages">
 								<label for="features-advantages">Блок преимуществ</label>
+								</li>
 							
-								<input type="checkbox" name="features" id="features-news" value="news" checked>
+								<li><input class="filtres-input" type="checkbox" name="features" id="features-news" value="news" checked>
 								<label for="features-news">Новости</label>
+								</li>
 							
-								<input type="checkbox" name="features" id="features-galery" value="galery">
+								<li><input class="filtres-input" type="checkbox" name="features" id="features-galery" value="galery">
 								<label for="features-galery">Галерея</label>
+								</li>
 							
-								<input type="checkbox" name="features" id="features-cart" value="cart">
+								<li><input class="filtres-input" type="checkbox" name="features" id="features-cart" value="cart">
 								<label for="features-cart">Корзина</label>
+								</li>
+						</ul>
 						</fieldset>
-						<button type="submit">Показать</button>
+						<button class="btn btn-filtres" type="submit">Показать</button>
 					</form>
         </section>
 				
