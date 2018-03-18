@@ -144,6 +144,9 @@ a {
 .footer-social ul {
 	list-style: none;
 }
+.footer-social a {
+	color:#000;
+}
 
 .write-us h2 {
 	font-weight: 500;
@@ -191,7 +194,7 @@ a {
 	opacity: 0.3;
 }
 
-.btn-filtres {
+.btn-filtres{
 	color:#000;
 	
 	background-color: #eee;
@@ -201,11 +204,62 @@ a {
 	background-color: #dfdfdf;
 }
 
-.btn-filtres:focus {
+.btn-filtres:focus{
 	color:rgba(255,255,255,0.3);
 	
 	background-color: #d5d5d5;
 	/*декор эффект тени*/
 }
 
+.sort p {
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 18px;
+}
 
+.sort-item {
+	list-style: none;
+	font-size: 14px;
+	line-height: 18px;
+	text-transform: uppercase;
+	
+}
+
+.sort-item a {
+	color:rgba(0,0,0,0.3);
+}
+.sort-item a:hover {
+	color:rgba(0,0,0,0.6);
+}
+.sort-item a:focus,
+.sort-item a:active,
+.sort-item .active /*временно*/ {
+	color:#000;
+}
+
+.pagination-list {
+	list-style: none;
+}
+
+.pagination-item a {
+	color:#000;
+	
+	background-color: #eee;
+}
+
+.pagination-item a:hover {
+	background-color: #dfdfdf;
+}
+
+.pagination-item a:focus{
+	color:rgba(255,255,255,0.3);
+	
+	background-color: #d5d5d5;
+	/*декор эффект тени*/
+}
+
+.pagination-item a:active,
+.pagination-item-point a{
+	border: 3px solid #dbdbdb;
+	background-color: #fff;
+}
