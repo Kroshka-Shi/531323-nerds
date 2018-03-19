@@ -155,6 +155,22 @@ a {
 	line-height: 18px;
 }
 
+.templates ul {
+	list-style: none;
+}
+
+.templates-logo {
+	opacity:0.2;
+}
+
+.templates-logo:hover {
+	opacity: 1;
+}
+
+.templates-logo:focus {
+	opacity: 0.1;
+}
+
 .footer-contacts p {
 	line-height: 18px;
 	color: #666666;
