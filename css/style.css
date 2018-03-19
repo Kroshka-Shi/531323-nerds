@@ -217,10 +217,40 @@ a {
 	border:2px solid #e74246;
 }
 
-.write-us input[type="text"]::-webkit-input-placeholder {color:rgba(68,68,68,0.5);}
-.write-form input[type="text"]::-moz-placeholder          {color:rgba(68,68,68,0.5);}
-.write-form input[type="text"]:-moz-placeholder           {color:rgba(68,68,68,0.5);}
-.write-form input[type="text"]:-ms-input-placeholder      {color:rgba(68,68,68,0.5);}
+::placeholder{
+	color:rgba(68,68,68,0.5);
+}
+
+:focus::placeholder {
+	color:#444444;
+}
+
+:invalid::placeholder {
+	color:#e74246;
+}
+
+::-ms-input-placeholder{
+	color:rgba(68,68,68,0.5);
+}
+
+:focus::-ms-input-placeholder{
+	color:#444444;
+}
+
+:invalid::-ms-input-placeholder {
+	color:#e74246;
+}
+
+:-ms-input-placeholder{
+	color:rgba(68,68,68,0.5);
+}
+
+:focus:-ms-input-placeholder {
+	color:#444444;
+}
+:invalid:-ms-input-placeholder {
+	color:#e74246;
+}
 
 .filtres fieldset {
   border: none;
@@ -231,6 +261,7 @@ a {
 	font-size: 18px;
 	line-height: 30px;
 	color:#000000;
+	text-transform: uppercase;
 }
 
 .filtres ul {
@@ -268,6 +299,7 @@ a {
 	font-weight: 700;
 	font-size: 18px;
 	line-height: 18px;
+	text-transform: uppercase;
 }
 
 .sort-item {
