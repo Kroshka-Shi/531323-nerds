@@ -8,7 +8,7 @@ body {
   font-weight: 400;
   color: #283136;
 	
-	background-color: #fff;
+	background-color: #ffffff;
 }
 
 a {
@@ -16,7 +16,7 @@ a {
 }
 .btn {
 	text-transform: uppercase;
-	color:#fff;
+	color:#ffffff;
 	line-height: 18px;
   font-weight: 500;
 	border:none;
@@ -33,13 +33,37 @@ a {
 .btn:focus{
 	color:rgba(255,255,255,0.3);
 	
-	background-color: #d7373b;
+	background-color: #d7373b;/*тень*/
+}
+
+.btn-green {
+	background-color: #00ca74;
+}
+
+.btn-green:hover {
+	background-color: #00bc6c;
+}
+
+.btn-green:focus {
+	background-color: #00aa62;
+}
+
+.btn-yellow {
+	background-color: #efc84a;
+}
+
+.btn-yellow:hover {
+	background-color: #eab534;
+}
+
+.btn-yellow:focus {
+	background-color: #e5a722;
 }
 
 .main-navigation,
 .slider,
 .main-title{
-	background-color: #eee;
+	background-color: #eeeeee;
 }
 
 .header-navigation,
@@ -49,7 +73,7 @@ a {
 
 .header-navigation a,
 .header-cart a {
-	color:#000;
+	color:#000000;
 	text-transform: uppercase;
 	line-height: 30px;
 	font-weight: 500;
@@ -70,7 +94,7 @@ a {
 .header-cart a:active,
 .header-navigation-point /*временно*/{
 	border-bottom: 2px solid #fb565a;
-	color:#000;
+	color:#000000;
 } 
 
 .slider ul {
@@ -82,7 +106,7 @@ a {
 	font-size: 55px;
   line-height: 55px;
   font-weight: 500;
-  color: #000;
+  color: #000000;
 }
 .services ul {
 	list-style: none;
@@ -93,27 +117,27 @@ a {
 	font-size: 24px;
 	line-height: 30px;
 	text-transform: uppercase;
-	color:#000;
+	color:#000000;
 }
 
 .column1 .title {
 	font-weight: 500;
 	font-size: 45px;
 	line-height: 45px;
-	color:#000;
+	color:#000000;
 }
 
-.column1 p b,/*не знаю как обозвать класс*/ 
+.orders,
 .advantages caption{
 	font-weight: 700;
 	text-transform: uppercase;
-	color:#000;
+	color:#000000;
 }
 
 .advantages th {
 	font-size:45px;
 	font-weight: 700;
-	color:#000;
+	color:#000000;
 	line-height: 10.06px;
 }
 
@@ -122,20 +146,20 @@ a {
 }
 .footer-contacts p {
 	line-height: 18px;
-	color: #666;
+	color: #666666;
 }
 .footer-contacts .title {
 	font-weight: 700;
 	font-size: 18px;
 	line-height: 30px;
-	color:#000;
+	color:#000000;
 }
 
 .footer-social b {
 	font-weight: 700;
 	font-size: 36px;
 	line-height: 36px;
-	color:#000;
+	color:#000000;
 }
 
 .footer-social p {
@@ -145,29 +169,58 @@ a {
 	list-style: none;
 }
 .footer-social a {
-	color:#000;
+	color:#000000;
 }
 
 .write-us h2 {
 	font-weight: 500;
 	font-size: 45px;
 	line-height: 45px;
+	color:#000000;
 }
 
 .write-us label {
 	font-weight: 700;
 	line-height: 18px;
+	color:#000000;
 }
 
-.write-us input[type="text"],
-.write-us input[type="email"],
-.write-us textarea{
+.write-form input[type="text"],
+.write-form input[type="email"],
+.write-form textarea{
 	font: inherit;
 	line-height: 18px;
-	color:rgba(68,68,68.0.5);
+	color:rgba(68,68,68,0.5);
 	
 	border:2px solid #d7dcde;
 }
+/*состояния форм*/
+.write-form input[type="text"]:hover,
+.write-form input[type="email"]:hover,
+.write-form textarea:hover{
+	border:2px solid #b4b9bb;
+}
+
+.write-form input[type="text"]:focus,
+.write-form input[type="email"]:focus,
+.write-form textarea:focus{
+	color:#444444;
+	
+	border:2px solid #000000;
+}
+
+.write-form input[type="text"]:invalid,
+.write-form input[type="email"]:invalid,
+.write-form textarea:invalid{
+	color:#e74246;
+	
+	border:2px solid #e74246;
+}
+
+.write-us input[type="text"]::-webkit-input-placeholder {color:rgba(68,68,68,0.5);}
+.write-form input[type="text"]::-moz-placeholder          {color:rgba(68,68,68,0.5);}
+.write-form input[type="text"]:-moz-placeholder           {color:rgba(68,68,68,0.5);}
+.write-form input[type="text"]:-ms-input-placeholder      {color:rgba(68,68,68,0.5);}
 
 .filtres fieldset {
   border: none;
@@ -177,7 +230,7 @@ a {
 	font-weight: 700;
 	font-size: 18px;
 	line-height: 30px;
-	color:#000;
+	color:#000000;
 }
 
 .filtres ul {
@@ -187,7 +240,7 @@ a {
 
 .filtres-input:hover + label,
 .filtres-input:focus + label{
-	color:#000;
+	color:#000000;
 }
 
 .filtres-input:disabled + label {
@@ -195,9 +248,9 @@ a {
 }
 
 .btn-filtres{
-	color:#000;
+	color:#000000;
 	
-	background-color: #eee;
+	background-color: #eeeeee;
 }
 
 .btn-filtres:hover{
@@ -222,7 +275,6 @@ a {
 	font-size: 14px;
 	line-height: 18px;
 	text-transform: uppercase;
-	
 }
 
 .sort-item a {
@@ -234,17 +286,27 @@ a {
 .sort-item a:focus,
 .sort-item a:active,
 .sort-item .active /*временно*/ {
-	color:#000;
+	color:#000000;
 }
 
+.catalog-title {
+	text-transform: uppercase;
+	color:#000000;
+	line-height: 30px;
+}
+
+.catalog-item {
+	color:#666666;
+	line-height: 18px;
+}
 .pagination-list {
 	list-style: none;
 }
 
 .pagination-item a {
-	color:#000;
+	color:#000000;
 	
-	background-color: #eee;
+	background-color: #eeeeee;
 }
 
 .pagination-item a:hover {
