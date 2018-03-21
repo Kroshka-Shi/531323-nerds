@@ -33,7 +33,6 @@ a {
 .wraper-main {
 	width:100%;
 	
-	background-color: #eeeeee;
 }
 
 .btn {
@@ -85,7 +84,7 @@ a {
 }
 
 .main-header {
-	
+	background-color: #eeeeee;
 }
 
 .main-navigation {
@@ -97,6 +96,9 @@ a {
 
 .header-navigation {
 	width:440px;
+	
+	display: flex;
+	justify-content: space-between;
 }
 
 .header-cart {
@@ -400,6 +402,19 @@ a {
 	color:#e74246;
 }
 
+.main-title {
+	padding: 0;
+	margin: 0;
+	padding-bottom: 115px;
+	padding-top: 65px;
+	
+	text-align: center;
+}
+
+.filtres {
+	width: 260px;
+}
+
 .filtres fieldset {
   border: none;
 }
@@ -443,6 +458,12 @@ a {
 	/*декор эффект тени*/
 }
 
+.sort {
+	width:760px;
+	
+	padding-bottom: 60px;
+}
+
 .sort p {
 	font-weight: 700;
 	font-size: 18px;
@@ -471,6 +492,11 @@ a {
 	color:#000000;
 }
 
+.catalog {
+	width: 760px;
+	padding-bottom: 60px;
+}
+
 .catalog-title {
 	text-transform: uppercase;
 	color:#000000;
@@ -488,6 +514,9 @@ a {
 
 .pagination-list {
 	list-style: none;
+	padding: 0;
+	margin: 0;
+	padding-bottom: 60px;
 }
 
 .pagination-item a {
@@ -511,4 +540,13 @@ a {
 .pagination-item-point a{
 	border: 3px solid #dbdbdb;
 	background-color: #ffffff;
+}
+
+.catalog-column {
+	display: flex;
+}
+
+.catalog-right-column {
+	display: flex;
+	flex-direction: column;
 }
