@@ -271,16 +271,44 @@ a {
 	opacity: 0.1;
 }
 
+.main-footer .container {
+	padding:70px 0;
+}
+
+.footer-map {
+	position: relative;
+}
+
+.footer-contacts {
+	position: absolute;
+	top:55px;
+	left: 140px;;
+	width: 319px;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 55px 50px 47px 50px;
+	
+	background-color: #ffffff;
+}
+
 .footer-contacts p {
+	margin: 0;
+	padding-bottom: 22px;
 	line-height: 18px;
 	color: #666666;
 }
 
 .footer-contacts .title {
+	margin: 0;
+	padding-bottom: 35px;
 	font-weight: 700;
 	font-size: 18px;
 	line-height: 30px;
 	color:#000000;
+}
+
+.contacts-btn {
+	margin-top: 35px;
 }
 
 .footer-social {
@@ -428,6 +456,7 @@ a {
 }
 
 .filtres ul {
+	padding: 0;
 	list-style: none;
 	line-height: 20px;
 }
