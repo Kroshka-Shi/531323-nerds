@@ -10,24 +10,27 @@
   <body>
       
     <header class="main-header">
-			<nav class="main-navigation">
-        <a class="header-logo" href="index.html"><img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип"></a>
-        <ul class="header-navigation">
-          <li><a href="#">Студия</a></li>
-          <li><a href="#">Клиенты</a></li>
-          <li><a class="header-navigation-point" href="#">Магазин</a></li>
-          <li><a href="#">Контакты</a></li>
-        </ul>
-        <ul class="header-cart">
-					<li><a href="#">Корзина</a></li>
-        </ul>
-      </nav>
+			<div class="wraper-main">
+				<div class="container">
+					<nav class="main-navigation">
+        		<a class="header-logo" href="index.html"><img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип"></a>
+        		<ul class="header-navigation">
+          		<li><a href="#">Студия</a></li>
+          		<li><a href="#">Клиенты</a></li>
+          		<li><a class="header-navigation-point" href="#">Магазин</a></li>
+          		<li><a href="#">Контакты</a></li>
+						</ul>
+        		<ul class="header-cart">
+							<li><a href="#">Корзина</a></li>
+        		</ul>
+      		</nav>
+					<h1 class="main-title">Магазин готовых шаблонов</h1>
+				</div>
+			</div>
     </header>
       
-    <main>
-      <h1 class="main-title">Магазин готовых шаблонов</h1>
-			
-        <section class="filtres">
+    <main class="catalog-column">
+       <section class="filtres">
 					<h2 class="hidden">Фильтры шаблонов</h2> 
 					<form method="get" action="https://echo.htmlacademy.ru">
 						<fieldset>
@@ -84,7 +87,7 @@
 						<button class="btn btn-filtres" type="submit">Показать</button>
 					</form>
         </section>
-				
+				<div class="catalog-right-column">
 				<section class="sort">
 						<p>Сортировать:</p>
 						<ul class="sort-item">
@@ -133,24 +136,27 @@
 							<a class="btn">9 900 руб.</a>
 						</li>	
 					</ul>
+				</section>
 					
+					<div class="pagination">
 					<ul class="pagination-list">
           <li class="pagination-item pagination-item-point"><a>1</a></li>
           <li class="pagination-item"><a href="#">2</a></li>
           <li class="pagination-item"><a href="#">3</a></li>
           <li class="pagination-item"><a href="#">Следущая</a></li>
-        </ul>
-				</section>
-			
+        	</ul>
+						</div>
+			</div>
       </main>
 		
 		<footer class="main-footer">
 			
 				<section class="footer-map"> <img src="img/map.jpg" width="1440" height="416" alt="Санкт-Петербург, ул. Б. Конюшенная, д. 19/8"></section>
 			
+			<div class="container">
 				<section class="footer-contacts">
         	<h2 class="hidden">Контактная информация</h2>
-        		<p>NЁRDS DESIGN STUDIO</p>
+        		<p class="title">NЁRDS DESIGN STUDIO</p>
 						<p>
           	191186, Санкт-Петербург,<br>
 						ул. Б. Конюшенная, д. 19/8<br>
@@ -162,15 +168,17 @@
       	</section>
 				
 				<div class="footer-social">
-					<b> Давайте дружить, это выгодно!</b>
-					<p> Скидка 10% для друзей из социальных сетей.</p>
-					<ul>
+					<div class="footer-title">
+						<b> Давайте дружить, это выгодно!</b>
+						<p> Скидка 10% для друзей из социальных сетей.</p>
+					</div>
+					<ul class="social-list">
 						<li><a class="social-btn" href="#"> Vk</a></li>
 						<li><a class="social-btn" href="#"> Fb</a></li>
 						<li><a class="social-btn" href="#"> Im</a></li>	
 					</ul>
 				</div>
-			
+				</div>
 			</footer>
 			
 			<section class="write-us">
