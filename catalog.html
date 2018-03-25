@@ -33,12 +33,21 @@
 					<form method="get" action="https://echo.htmlacademy.ru">
 						<fieldset>
 							<legend>Стоимость:</legend>
-								<div><span></span><span></span></div>
-								<label for="cost-min">от</label>
-								<input type="number" name="cost-min" id="cost-min" value="0">
 							
-								<label for="cost-max">до</label>
-								<input type="number" name="cost-max" id="cost-max" value="15000">
+							<div class="range-filter">
+								<div class="range-controls">
+            			<div class="scale">
+              			<div class="bar" style="margin-left: 20%; width: 30%"></div>
+            			</div>
+            			<div class="toggle toggle-min"></div>
+            			<div class="toggle toggle-max"></div>
+          			</div>
+							
+								<div class="cost-controls">
+									<label>от<input type="number" name="cost-min" value="0"></label>
+									<label>до<input type="number" name="cost-max"value="15000"></label>
+								</div>
+							</div>
 						</fieldset>
 						
 						<fieldset>
@@ -93,7 +102,7 @@
 								<li> <a href="#">по типу</a></li>
 								<li> <a href="#">по названию</a></li>
 						</ul>
-						<a href="#"><span>По убыванию</span></a> <a href="#"><span>По возрастанию</span></a>
+						<a href="#"><span class="hidden">По убыванию</span></a> <a href="#"><span class="hidden">По возрастанию</span></a>
 				</section>
 				
 				<section class="catalog">
