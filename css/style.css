@@ -366,6 +366,7 @@ a {
 }
 
 .column {
+	width: 1160px;
 	display:flex;
 	justify-content: space-between;
 	padding-top:40px;
@@ -376,7 +377,6 @@ a {
 
 .column1 {
 	width:660px;
-	/*margin-right: 140px;*/
 }
 
 .column-wraper {
@@ -400,19 +400,29 @@ a {
 	margin: 0;
 }
 
+.orders {
+	margin: 0;
+	padding: 0;
+	display: block;
+	margin-bottom: 23px;
+}
 .orders-list {
 	list-style: none;
 	margin: 0;
 	padding: 0;
 }
+
 .orders-item {
-	margin-top: 37px;
+	margin: 0;
+	padding: 0;
+	width:660px;
+	box-sizing: border-box;
+	margin-bottom: 25px;
 	padding-left: 36px;
-	width: 25px;
-	height: 2px;
 	
 	background-image: url(../img/sprite-li.png);
 	background-repeat: no-repeat;
+	background-position: 0% 50%;
 }
 
 .orders,
@@ -433,18 +443,15 @@ a {
 }
 
 .advantages caption {
-	margin-bottom: 50px;
-}
-
-.advantages tr {
-	margin-right: 22px;
+	margin-bottom: 47px;
 }
 
 .advantages th {
+	padding-right: 10px;
 	font-size:45px;
 	font-weight: 700;
 	color:#000000;
-	line-height: 10.06px;
+	/*line-height: 10.06px;*/
 }
 
 .advantages td {
@@ -551,13 +558,23 @@ a {
 	align-items: center;
 	
 	padding: 0;
-	padding-right: 140px;
+	margin-right: 140px;
 	margin: 0;
 	list-style: none;
+	
 }
 
 .social-list a {
 	color:#000000;
+}
+
+.social-btn {
+	width: 80px;
+ 	height: 80px;
+ 	background: #e1e1e1;
+ 	-moz-border-radius: 50px;
+ 	-webkit-border-radius: 50px;
+ 	border-radius: 50px;
 }
 
 
