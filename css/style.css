@@ -12,6 +12,8 @@ body {
 	background-color: #ffffff;
 }
 
+img{max-width: 100%;}
+
 .hidden {
   position: absolute;
   width: 1px;
@@ -471,6 +473,8 @@ font-size: 27px;
 
 .templates {
 	padding:45px 0;
+	padding-bottom: 42px;
+	margin-bottom: 79px;
 	
 	border-bottom: 2px solid #eeeeee;
 }
@@ -485,8 +489,27 @@ font-size: 27px;
 	align-items: center;
 }
 
+.templates-list li {
+	position: relative;
+	width:260px;
+}
+
+
+.templates-list li:not(:last-child)::after{
+	content: " ";
+	display: block;
+  width: 2px;
+  height: 55px;
+  background: #eeeeee;
+	position: absolute;
+  top: 10px;
+  right: 0;
+
+}
+
 .templates-logo {
 	opacity:0.2;
+  width: 260px;
 }
 
 .templates-logo:hover {
@@ -497,42 +520,37 @@ font-size: 27px;
 	opacity: 0.1;
 }
 
-.main-footer .container {  /*?????????*/
-	padding:70px 0;
-}
-
 .footer-map {
+	height: 416px;
 	position: relative;
-}
-
-.footer-map img {
-	width: 100%;
-	height:auto;
-	overflow: hidden;
+	
+	background-image: url(../img/map.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
 }
 
 .footer-contacts {
-	position: absolute;
-	top:55px;
-	left: 140px;;
 	width: 319px;
 	box-sizing: border-box;
 	margin: 0;
-	padding: 55px 50px 47px 50px;
+	padding: 50px 50px 47px 50px;
+	position: absolute;
+	left:340px;
+	top: 55px;
 	
 	background-color: #ffffff;
 }
 
 .footer-contacts p {
 	margin: 0;
-	padding-bottom: 22px;
+	padding-bottom: 20px;
 	line-height: 18px;
 	color: #666666;
 }
 
 .footer-contacts .title {
 	margin: 0;
-	padding-bottom: 35px;
+	padding-bottom: 20px;
 	font-weight: 700;
 	font-size: 18px;
 	line-height: 30px;
@@ -540,27 +558,35 @@ font-size: 27px;
 }
 
 .contacts-btn {
-	margin-top: 35px;
+	width: 219px;
+	margin-top: 17px;
 }
 
 .footer-social {
 	display: flex;
-	justify-content: space-between;
+	justify-content: flex-start;
+	padding:65px 0;
 }
 
 .footer-title {
+	padding-top: 10px;
 	width:560px;
 	order: 2;
 }
 
 .footer-title b {
+	display: block;
 	font-weight: 700;
 	font-size: 36px;
 	line-height: 36px;
 	color:#000000;
+	margin: 0;
+	margin-bottom: 10px;
 }
 
 .footer-title p {
+	display: block;
+	margin: 0;
 	line-height: 22px;
 }
 
@@ -571,8 +597,8 @@ font-size: 27px;
 	align-items: center;
 	
 	padding: 0;
-	margin-right: 140px;
 	margin: 0;
+	margin-right: 140px;
 	list-style: none;
 	
 }
