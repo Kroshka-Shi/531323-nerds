@@ -895,11 +895,11 @@ font-size: 27px;
 }
 
 .range-controls .toggle-min {
-  left: 50px;
+  left: 18px;
 }
 
 .range-controls .toggle-max {
-  left: 110px;
+  left: 160px;
 }
 
 .cost-controls {
@@ -936,6 +936,7 @@ font-size: 27px;
 .btn-filtres{
 	width: 260px;
 	color:#000000;
+	margin-top: 30px;
 	
 	background-color: #eeeeee;
 }
@@ -1040,13 +1041,22 @@ font-size: 27px;
 }
 
 .pagination-list {
+	display: flex;
 	list-style: none;
 	padding: 0;
 	margin: 0;
 	padding-bottom: 60px;
 }
 
+.pagination-item {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
 .pagination-item a {
+	height:50px;
+	display: block;
 	color:#000000;
 	
 	background-color: #eeeeee;
@@ -1064,6 +1074,7 @@ font-size: 27px;
 }
 
 .pagination-item-point a{
+	box-sizing: border-box;
 	border: 3px solid #dbdbdb;
 	background-color: #ffffff;
 }
