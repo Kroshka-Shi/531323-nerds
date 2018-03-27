@@ -53,15 +53,15 @@
 						<fieldset>
 							<legend>Сетка: </legend>
 							<ul>
-								<li><input class="filtres-input" type="radio" name="layout" id="layout-adaptive" value="adaptive" checked>
+								<li class="filter-item"><input class="filtres-input hidden filteres-radio" type="radio" name="layout" id="layout-adaptive" value="adaptive" checked>
 								<label for="layout-adaptive">Адаптивная</label>
 								</li>
 								
-								<li><input class="filtres-input" type="radio" name="layout" id="layout-fixed" value="fixed" disabled>
+								<li class="filter-item"><input class="filtres-input hidden filteres-radio" type="radio" name="layout" id="layout-fixed" value="fixed" disabled>
 								<label for="layout-fixed">Фиксированная</label>
 								</li>
 							
-								<li><input class="filtres-input" type="radio" name="layout" id="layout-adaptable" value="adaptable">
+								<li class="filter-item"><input class="filtres-input hidden filteres-radio" type="radio" name="layout" id="layout-adaptable" value="adaptable">
 								<label for="layout-adaptable">Резиновая</label>
 								</li>
 							</ul>
@@ -70,23 +70,23 @@
 						<fieldset>
 							<legend>Особенности:</legend>
 							<ul>
-								<li><input class="filtres-input" type="checkbox" name="features" id="features-slider" value="slider" checked>
+								<li class="filter-item"><input class="filtres-input hidden filteres-checkbox" type="checkbox" name="features" id="features-slider" value="slider" checked>
 								<label for="features-slider">Слайдер</label>
 								</li>
 							
-								<li><input class="filtres-input" type="checkbox" name="features" id="features-advantages" value="advantages">
+								<li class="filter-item"><input class="filtres-input hidden filteres-checkbox" type="checkbox" name="features" id="features-advantages" value="advantages">
 								<label for="features-advantages">Блок преимуществ</label>
 								</li>
 							
-								<li><input class="filtres-input" type="checkbox" name="features" id="features-news" value="news" checked>
+								<li class="filter-item"><input class="filtres-input hidden filteres-checkbox" type="checkbox" name="features" id="features-news" value="news" checked>
 								<label for="features-news">Новости</label>
 								</li>
 							
-								<li><input class="filtres-input" type="checkbox" name="features" id="features-galery" value="galery">
+								<li class="filter-item"><input class="filtres-input hidden filteres-checkbox" type="checkbox" name="features" id="features-galery" value="galery">
 								<label for="features-galery">Галерея</label>
 								</li>
 							
-								<li><input class="filtres-input" type="checkbox" name="features" id="features-cart" value="cart">
+								<li class="filter-item"><input class="filtres-input hidden filteres-checkbox" type="checkbox" name="features" id="features-cart" value="cart">
 								<label for="features-cart">Корзина</label>
 								</li>
 						</ul>
@@ -94,6 +94,7 @@
 						<button class="btn btn-filtres" type="submit">Показать</button>
 					</form>
         </section>
+			
 				<div class="catalog-right-column">
 				<section class="sort">
 						<p>Сортировать:</p>
@@ -102,7 +103,8 @@
 								<li> <a href="#">по типу</a></li>
 								<li> <a href="#">по названию</a></li>
 						</ul>
-						<a href="#"><span class="hidden">По убыванию</span></a> <a href="#"><span class="hidden">По возрастанию</span></a>
+						<a class="sort-pointer-down" href="#"><img src="img/icon-down-dir.svg" width="11" height="10" aria-label="По убыванию"></a> 
+						<a class="sort-pointer" href="#"><img src="img/icon-up-dir.svg" width="11" height="10" aria-label="По возрастанию"></a>
 				</section>
 				
 				<section class="catalog">
