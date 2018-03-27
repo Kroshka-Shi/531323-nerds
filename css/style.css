@@ -522,20 +522,24 @@ font-size: 27px;
 
 .footer-map {
 	height: 416px;
-	position: relative;
 	
 	background-image: url(../img/map.jpg);
 	background-repeat: no-repeat;
 	background-position: center;
+	background-size: cover;
+}
+
+.footer-map .container {
+	position: relative;
 }
 
 .footer-contacts {
 	width: 319px;
 	box-sizing: border-box;
 	margin: 0;
-	padding: 50px 50px 47px 50px;
+	padding: 48px 50px 47px 50px;
 	position: absolute;
-	left:340px;
+	left:20px;
 	top: 55px;
 	
 	background-color: #ffffff;
@@ -617,7 +621,7 @@ font-size: 27px;
   justify-content: center;
 }
 
-
+/*----------------------МОДАЛЬНОЕ ОКНО--------------------*/
 .write-us h2 {
 	font-weight: 500;
 	font-size: 45px;
@@ -730,6 +734,8 @@ font-size: 27px;
 	line-height: 30px;
 	color:#000000;
 	text-transform: uppercase;
+	padding: 0;
+	margin: 0;
 }
 
 .filtres ul {
