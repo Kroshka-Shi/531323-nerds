@@ -781,6 +781,7 @@ font-size: 27px;
 
 .filteres-radio + label::before {
 	content:" ";
+	opacity: 0.4;
 	
 	position: absolute;
 	top:-3px;;
@@ -794,8 +795,14 @@ font-size: 27px;
 	background-position: 0 0;
 }
 
-.filteres-radio:checked + label::before {
+.filteres-radio:focus + label::before,
+.filteres-radio:hover + label::before {
+	opacity: 1;
+}
+
+.filteres-radio:checked + label::before{
 	content:" ";
+	opacity: 1;
 	
 	position: absolute;
 	top:-3px;
@@ -811,6 +818,7 @@ font-size: 27px;
 
 .filteres-checkbox + label::before {
 	content:" ";
+	opacity: 0.4;
 	
 	position: absolute;
 	top:-3px;;
@@ -824,8 +832,14 @@ font-size: 27px;
 	background-position: 0 0;
 }
 
+.filteres-checkbox:focus + label::before,
+.filteres-checkbox:hover + label::before {
+	opacity: 1;
+}
+
 .filteres-checkbox:checked + label::before {
 	content:" ";
+	opacity: 1;
 	
 	position: absolute;
 	top:-3px;;
@@ -1016,7 +1030,7 @@ font-size: 27px;
 .catalog-title {
 	padding: 0;
 	margin: 0;
-	margin-top: 30px;
+	margin-top: 25px;
 }
 
 .catalog-title a {
@@ -1026,8 +1040,6 @@ font-size: 27px;
 	font-size: 18px;
   line-height: 34px;
   font-weight: 700;
-	
-	color:
 }
 
 .catalog-list {
@@ -1044,9 +1056,9 @@ font-size: 27px;
 
 .catalog-item {
 	position: relative;
-	padding-top:43px;
+	padding-top:42px;
 	width:360px;
-	margin-bottom: 33px;
+	margin-bottom: 28px;
 }
 
 .catalog-item::before {
@@ -1080,17 +1092,16 @@ font-size: 27px;
 	align-items: center;
 	width:360px;
 	position: absolute;
-	left:-999999px;
-	top:-999999px;
+	left:0;
+	bottom:0;
 	padding-bottom: 44px;
+	opacity: 0;
 	
 	background-color:#eeeeee;
 }
 
 .catalog-item:hover .hover-content {
-	position: absolute;
-	left:0;
-	top:385px;
+	opacity: 1;
 }
 
 .btn-catalog {
@@ -1099,6 +1110,7 @@ font-size: 27px;
 
 .pagination-list {
 	display: flex;
+		flex-wrap: wrap;
 	list-style: none;
 	padding: 0;
 	margin: 0;
@@ -1109,14 +1121,26 @@ font-size: 27px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	
+	margin-right: 12px;
+}
+
+.pagination-item:last-child{
+	margin-right: 0;
 }
 
 .pagination-item a {
-	height:50px;
 	display: block;
+	text-transform: uppercase;
+	line-height: 18px;
+	font-weight: 500;
 	color:#000000;
+	box-sizing: border-box;
+	padding: 16px 20.5px;
+	text-align: center;
 	
 	background-color: #eeeeee;
+	border-radius: 3px;
 }
 
 .pagination-item a:hover {
@@ -1132,7 +1156,11 @@ font-size: 27px;
 
 .pagination-item-point a{
 	box-sizing: border-box;
+	padding: 13px 17.5px;
 	border: 3px solid #dbdbdb;
 	background-color: #ffffff;
 }
 
+.pagination-item-last a {
+	width: 260px;
+}
