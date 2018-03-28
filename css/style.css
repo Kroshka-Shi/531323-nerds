@@ -962,7 +962,7 @@ font-size: 27px;
 	box-sizing: border-box;
 	display: flex;
 	
-	padding-bottom: 60px;
+	padding-bottom: 50px;
 }
 
 .sort p {
@@ -1014,12 +1014,23 @@ font-size: 27px;
 }
 
 .catalog-title {
+	padding: 0;
+	margin: 0;
+	margin-top: 30px;
+}
+
+.catalog-title a {
 	text-transform: uppercase;
 	color:#000000;
 	line-height: 30px;
+	font-size: 18px;
+  line-height: 34px;
+  font-weight: 700;
+	
+	color:
 }
 
-.catalog-item {
+.catalog-list {
 	width: 760px;
 	display: flex;
 	justify-content: space-between;
@@ -1031,13 +1042,59 @@ font-size: 27px;
 	list-style: none;
 }
 
-.catalog-item li {
+.catalog-item {
+	position: relative;
+	padding-top:43px;
 	width:360px;
 	margin-bottom: 33px;
 }
 
-.catalog-item li:nth-child(2n-1){
+.catalog-item::before {
+	content:" ";
+	
+	position: absolute;
+	top:3px;
+	left:0;
+	
+	width:360px;
+	height:40px;
+	
+	background-image:url(../img/browser.svg);
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+
+.catalog-item:nth-child(2n-1){
 	margin-right: 40px;
+}
+
+.catalog-item p {
+	margin-bottom: 30px;
+	text-align: center;
+}
+
+.hover-content {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width:360px;
+	position: absolute;
+	left:-999999px;
+	top:-999999px;
+	padding-bottom: 44px;
+	
+	background-color:#eeeeee;
+}
+
+.catalog-item:hover .hover-content {
+	position: absolute;
+	left:0;
+	top:385px;
+}
+
+.btn-catalog {
+	width: 200px;
 }
 
 .pagination-list {
