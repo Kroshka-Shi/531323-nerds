@@ -627,6 +627,19 @@ font-size: 27px;
   justify-content: center;
 }
 
+.social-btn:hover {
+	background-color:#e74246;
+}
+
+.social-btn:active{
+	background-color: #d7373b;
+	box-shadow: 0 3px rgba(0, 0, 0, 0.1) inset;
+}
+
+.social-btn:active img {
+	opacity: 0.3;
+}
+
 /*----------------------МОДАЛЬНОЕ ОКНО--------------------*/
 .write-us {
 	display: none;/*  ВКЛ/ВЫКЛ МОДАЛКА*/
@@ -653,6 +666,14 @@ font-size: 27px;
 	opacity: 0.3;
 	background-color: transparent;
 	border: 0;
+}
+
+.modal-close:hover {
+	opacity: 1;
+}
+
+.modal-close:active{
+	opacity: 0.1;
 }
 
 .write-us h2 {
@@ -1007,7 +1028,7 @@ font-size: 27px;
 }
 
 .btn-filtres:active{
-	color:rgba(255,255,255,0.3);
+	color:rgba(0,0,0,0.3);
 	
 	background-color: #d5d5d5;
 	box-shadow: 0 3px rgba(0, 0, 0, 0.1) inset;
@@ -1055,19 +1076,33 @@ font-size: 27px;
 	color:rgba(0,0,0,0.3);
 }
 
-.sort-list a:hover {
+.sort-list a:hover{
 	color:rgba(0,0,0,0.6);
 }
 
 .sort-list a:active,
-.sort-list .active /*временно*/ {
+.sort-list .active/*временно*/ {
 	color:#000000;
+}
+
+.sort-pointer-up {
+	opacity: 0.2;
 }
 
 .sort-pointer-down {
 	margin-right: 17px;
+	opacity: 0.2;
 }
 
+.sort-pointer-down:hover,
+.sort-pointer-up:hover {
+	opacity: 0.5;
+}
+
+.sort-pointer-down:active,
+.sort-pointer-up:active {
+	opacity: 1;
+}
 
 .catalog {
 	width: 760px;
@@ -1161,6 +1196,11 @@ font-size: 27px;
 	width: 200px;
 }
 
+.btn-catalog:hover,
+.btn-catalog:active{
+	color:#ffffff;
+}
+
 .pagination-list {
 	display: flex;
 		flex-wrap: wrap;
@@ -1198,10 +1238,11 @@ font-size: 27px;
 
 .pagination-item a:hover {
 	background-color: #dfdfdf;
+	border-color: #dfdfdf;
 }
 
 .pagination-item a:active{
-	color:rgba(255,255,255,0.3);
+	color:rgba(0,0,0,0.3);
 	
 	background-color: #d5d5d5;
 	box-shadow: 0 3px rgba(0, 0, 0, 0.1) inset;
