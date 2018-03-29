@@ -582,7 +582,9 @@ font-size: 27px;
 	order: 2;
 }
 
-.footer-title b {
+.footer-title b {,
+	,
+	
 	display: block;
 	font-weight: 700;
 	font-size: 36px;
@@ -627,11 +629,30 @@ font-size: 27px;
 
 /*----------------------МОДАЛЬНОЕ ОКНО--------------------*/
 .write-us {
+	display: none;/*  ВКЛ/ВЫКЛ МОДАЛКА*/
+	position: fixed;
+	top:100px;
+	left:50%;
+	margin-left: -480px;
 	background-color: #ffffff;
 	box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
-	padding:72px 100px 84px 100px;
+	padding:20px 100px 84px 100px;
 	box-sizing: border-box;
 	width: 960px;
+}
+
+.modal-close {
+	position: absolute;
+	top:76px;
+	right: 90px;
+	width: 21px;
+	height: 21px;
+	font-size: 0;
+	background-image: url(../img/close-cross.svg);
+	background-repeat: no-repeat;
+	opacity: 0.3;
+	background-color: transparent;
+	border: 0;
 }
 
 .write-us h2 {
@@ -647,14 +668,28 @@ font-size: 27px;
 	color:#000000;
 }
 
+.column-form {
+	display: flex;
+	justify-content: space-between;
+	width: 760px;
+}
+
 .write-form input[type="text"],
 .write-form input[type="email"],
 .write-form textarea{
+	width: 360px;
 	font: inherit;
 	line-height: 18px;
 	color:rgba(68,68,68,0.5);
-	
+	margin-right: 40px;
+	box-sizing: border-box;
+	padding: 15px 10px;
 	border:2px solid #d7dcde;
+}
+
+.write-form textarea {
+	width: 760px;
+	margin-bottom: 50px;
 }
 
 .write-form input[type="text"]:hover,
