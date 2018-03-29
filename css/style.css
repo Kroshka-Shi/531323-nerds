@@ -315,6 +315,7 @@ a {
 }
 
 .services {
+	width: 1160px;
 	padding:80px 0;
 	
 	border-bottom: 2px solid #eeeeee;
