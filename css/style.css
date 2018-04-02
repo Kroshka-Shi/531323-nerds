@@ -586,6 +586,7 @@ a {
 }
 
 .footer-map {
+	position: relative;
 	height: 416px;
 	z-index: 1;
 	
@@ -595,20 +596,21 @@ a {
 	background-size: cover;
 }
 
-.footer-map .container {
-	position: relative;
+.footer-map iframe {
+	z-index: 2;
 }
 
 .footer-contacts {
 	position: absolute;
-	left:20px;
-	top: 55px;
+	left:50%;
+	top: 50%;
 	z-index: 3;
 	
 	width: 319px;
 	box-sizing: border-box;
 	margin: 0;
 	padding: 48px 50px 47px 50px;
+	transform: translateY(-50%) translateX(-582px);
 		
 	background-color: #ffffff;
 }
@@ -683,6 +685,7 @@ a {
 	position: fixed;
 	top:100px;
 	left:50%;
+	z-index: 4;
 	
 	display: none;/*  ВКЛ/ВЫКЛ МОДАЛКА*/
 	margin-left: -480px;
@@ -1020,7 +1023,7 @@ a {
 	color:#000000;
 }
 
-.filtres-input:disabled + label {
+.filtres-input:disabled + label{
 	opacity: 0.3;
 }
 
@@ -1057,6 +1060,11 @@ a {
 	background-repeat: no-repeat;
 	background-position: 0 0;
 	opacity: 1;
+}
+
+.filteres-radio:checked:disabled + label::before,
+.filteres-checkbox:checked:disabled + label::before{
+	opacity: 0.3;
 }
 
 .filteres-checkbox + label::before {
