@@ -587,6 +587,7 @@ a {
 
 .footer-map {
 	height: 416px;
+	z-index: 1;
 	
 	background-image: url(../img/map.jpg);
 	background-repeat: no-repeat;
@@ -602,6 +603,7 @@ a {
 	position: absolute;
 	left:20px;
 	top: 55px;
+	z-index: 3;
 	
 	width: 319px;
 	box-sizing: border-box;
