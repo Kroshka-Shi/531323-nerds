@@ -597,7 +597,11 @@ a {
 }
 
 .footer-map iframe {
+	height: 416px;
+	width: 100%;
 	z-index: 2;
+	
+	border: none;
 }
 
 .footer-contacts {

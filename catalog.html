@@ -5,7 +5,7 @@
     <title>HTML Academy: Нёрдс</title>
 		<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
 		<link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
 	
   <body>
@@ -171,7 +171,7 @@
 		
 	<footer class="main-footer">
 			<div class="footer-map">
-				<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ab3a8b0a0d522aaab5eb09e529259ba78952d5930e492c8d756606a731357568d&amp;source=constructor" width="100%" height="416" frameborder="0"></iframe>			
+				<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ab3a8b0a0d522aaab5eb09e529259ba78952d5930e492c8d756606a731357568d&amp;source=constructor"></iframe>			
 				<section class="footer-contacts">
         	<h2 class="hidden">Контактная информация</h2>
         	<p class="title">NЁRDS DESIGN STUDIO</p>
@@ -230,71 +230,6 @@
 			</form>
 			<button class="modal-close" type="button">Закрыть</button>
 		</section>
-		
-				<script>
-  var link = document.querySelector(".contacts-btn");
-  
-  var popup = document.querySelector(".write-us");
-  var close = popup.querySelector(".modal-close");
-  
-  var form = popup.querySelector("form");
-  var name = popup.querySelector("[name=login]");
-  var email = popup.querySelector("[name=email]");
-	var text = popup.querySelector("[name=text]");
-  
-  var isStorageSupport = true;
-  var storage = "";
-
-  try {
-    storage = localStorage.getItem("login");
-		storage = localStorage.getItem("email");
-  } catch (err) {
-    isStorageSupport = false;
-  }
-  
-  link.addEventListener("click", function (evt) {
-    evt.preventDefault();
-    popup.classList.add("modal-show");
-    
-    if (storage) {
-      login.value = storage;
-			email.value = storage;
-      text.focus();
-    } else {
-      login.focus();
-    }
-  });
-  
-  close.addEventListener("click", function (evt) {
-    evt.preventDefault();
-    popup.classList.remove("modal-show");
-    popup.classList.remove("modal-error");
-  });
-  
-  form.addEventListener("submit", function (evt) {
-    if (!login.value || !email.value) {
-      evt.preventDefault();
-      popup.classList.remove("modal-error");
-      popup.offsetWidth = popup.offsetWidth;
-      popup.classList.add("modal-error");
-    } else {
-      if (isStorageSupport) {
-        localStorage.setItem("login", login.value);
-				localStorage.setItem("email", email.value);
-      }
-    }
-  });
-  
-  window.addEventListener("keydown", function (evt) {
-    if (evt.keyCode === 27) {
-      evt.preventDefault();
-      if (popup.classList.contains("modal-show")) {
-        popup.classList.remove("modal-show");
-        popup.classList.remove("modal-error");
-      }
-    }
-  });
-</script>	
-		
+		<script src="js/js-modal.min.js"></script>
 	</body>
 </html>
