@@ -1076,6 +1076,11 @@ a {
 	opacity: 1;
 }
 
+.filteres-radio:hover:disabled + label::before,
+.filteres-checkbox:hover:disabled + label::before {
+	opacity: 0.3;
+}
+
 .filteres-radio:checked:disabled + label::before,
 .filteres-checkbox:checked:disabled + label::before {
 	opacity: 0.3;
