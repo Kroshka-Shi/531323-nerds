@@ -172,7 +172,7 @@
 
 	<footer class="main-footer">
 		<div class="footer-map">
-			<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ab3a8b0a0d522aaab5eb09e529259ba78952d5930e492c8d756606a731357568d&amp;source=constructor"></iframe>
+			<div id="map"></div>
 			<section class="footer-contacts">
 				<h2 class="hidden">Контактная информация</h2>
 				<p class="title">NЁRDS DESIGN STUDIO</p>
@@ -230,6 +230,28 @@
 		</form>
 		<button class="modal-close" type="button">Закрыть</button>
 	</section>
+  <script>
+    function initMap() {
+      var coordinat = {
+        lat: 59.938864,
+        lng: 30.323015
+      };
+      var map = new google.maps.Map(document.getElementById('map'), {
+        center: coordinat,
+        zoom: 17
+      });
+      var marker = new google.maps.Marker({
+        position: coordinat,
+        map: map,
+        draggable: true,
+        animation: google.maps.Animation.DROP,
+        icon: {
+        url: "./img/map-pin.png",
+      }
+      });
+    }
+  </script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAgIL1dLCptxMj5tDvL_NKvt8LtE0dItjw&callback=initMap" async defer></script>
 	<script src="js/js-modal.min.js"></script>
 </body>
 
